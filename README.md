@@ -170,7 +170,7 @@ This case study demonstrates how data can be leveraged to:
 
 ---
 
-## 📬 Contact  
+## Contact  
 
 **Refilwe Mofokeng**  
 www.linkedin.com/in/refilwe-mofokeng
