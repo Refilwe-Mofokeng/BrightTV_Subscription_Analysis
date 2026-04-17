@@ -6,7 +6,10 @@ SELECT
 --- USER DIMENSIONS
     COALESCE(u.UserID,v.UserID0, 'Unknown') AS UserID,
     IFNULL(u.Gender, 'Unknown') AS Gender,
-    IFNULL(u.Race, 'Unknown') AS Race,
+    CASE WHEN u.Race IS NULL THEN 'Unknown'
+         WHEN u.Race = ' ' THEN 'Unknown'
+         ELSE u.Race
+    END AS Race,
 
     --- FIX PROVINCE NAMING CONVENTION
     CASE 
@@ -31,19 +34,19 @@ SELECT
     END AS Age_Group,
 
 --- DATE & TIME BREAKDOWNS
-    --timezone conversion
+    --conversion
     from_utc_timestamp(v.RecordDate2, 'Africa/Johannesburg') AS SA_Time,
 
-    -- date extraction
+    -- date
     DATE_FORMAT(from_utc_timestamp(v.RecordDate2, 'Africa/Johannesburg'), 'yyyy-MM-dd') AS Date,
 
-    -- time extraction
+    -- time
     DATE_FORMAT(from_utc_timestamp(v.RecordDate2, 'Africa/Johannesburg'), 'HH:mm:ss') AS Time,
 
-    --month name extraction
+    --month
     monthname(from_utc_timestamp(v.RecordDate2, 'Africa/Johannesburg')) AS Month,
 
-    --day of week extraction
+    --day of week
     DATE_FORMAT(from_utc_timestamp(v.RecordDate2, 'Africa/Johannesburg'), 'E') AS Day_of_Week,
 
     --- weekday vs weekend classification
