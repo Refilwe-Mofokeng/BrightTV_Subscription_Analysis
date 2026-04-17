@@ -71,7 +71,7 @@ The analysis was conducted in a structured, end-to-end workflow:
 
 ---
 
-## 📊 Key Insights  
+## Key Insights  
 
 ### Strong Growth in Usage  
 Viewership increased significantly over time, with usage concentrated during **weekends and afternoons**, reflecting leisure-driven consumption behaviour.
@@ -107,7 +107,7 @@ Weekday mornings and mid-day periods show **low usage and low engagement**, repr
 
 ---
 
-## 🚀 Recommendations  
+## Recommendations  
 
 ### Increase Engagement Depth  
 - Promote binge-worthy content  
@@ -144,7 +144,7 @@ Maximises user acquisition and lifetime value
 
 ---
 
-## 🛠 Tools Used  
+## Tools Used  
 
 - **Miro** → Project planning and flowchart design  
 - **Canva** → Project structuring and visual planning  
