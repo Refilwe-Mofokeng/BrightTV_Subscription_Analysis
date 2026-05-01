@@ -64,7 +64,22 @@ The analysis was conducted in a structured, end-to-end workflow:
 
 ---
 
-### 4. Insights & Presentation  
+### 4. Dashboard Development (Looker Studio)
+Built an interactive dashboard to support stakeholder exploration and decision-making.
+
+Dashboard includes:
+- Executive Summary
+- User Demographics
+- Time & Usage Patterns
+- Content Performance
+- Engagement Deep Dive
+
+**Dashboard Link:**  
+[https://datastudio.google.com/reporting/d5213f97-f41d-4ec6-a506-b0f03576a6e1]
+
+---
+
+### 5. Insights & Presentation  
 - Synthesised findings into **executive-level insights**  
 - Structured recommendations aligned to **subscription growth objectives**  
 - Compiled into a PowerPoint presentation for decision-makers  
